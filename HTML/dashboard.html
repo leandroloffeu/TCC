@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Sistema de Escalas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .nav a:hover {
+            background-color: #f0f0f0;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            color: #333;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .notification {
+            background-color: #e3f2fd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border-left: 4px solid #2196F3;
+        }
+        .notification h4 {
+            margin: 0 0 5px 0;
+            color: #1976D2;
+        }
+        .notification p {
+            margin: 0;
+            color: #333;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #f44336;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Dashboard</h1>
+            <div class="nav">
+                <a href="escala.html">Nova Escala</a>
+                <a href="calendario.html">Calendário</a>
+                <a href="perfil.html">Meu Perfil</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Próximas Escalas</h3>
+            <div class="notification">
+                <h4>05/04 - Culto de Celebração</h4>
+                <p>19:30 - 21:30</p>
+                <p>Ministério: Louvor</p>
+            </div>
+            <div class="notification">
+                <h4>12/04 - Escola Dominical</h4>
+                <p>09:00 - 11:00</p>
+                <p>Ministério: Ensino</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Notificações</h3>
+            <div class="notification">
+                <p>🔔 Nova escala criada</p>
+                <p>Culto de Celebração - 05/04</p>
+            </div>
+            <div class="notification">
+                <p>✅ Substituição aprovada</p>
+                <p>Escola Dominical - 12/04</p>
+            </div>
+        </div>
+
+        <div class="actions">
+            <a href="escala.html" class="btn btn-primary">Nova Escala</a>
+            <a href="calendario.html" class="btn btn-primary">Ver Calendário</a>
+        </div>
+
+        <a href="index.html" class="back-link">← Voltar para a página inicial</a>
+    </div>
+</body>
+</html> 

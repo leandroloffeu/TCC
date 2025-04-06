@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Escalas - Sistema de Escalas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .nav a:hover {
+            background-color: #f0f0f0;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            color: #333;
+            margin-top: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #f44336;
+            color: white;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+        .member-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .member-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .member-item:last-child {
+            border-bottom: none;
+        }
+        .member-info {
+            flex: 1;
+        }
+        .member-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .member-role {
+            color: #666;
+            font-size: 14px;
+        }
+        .checkbox {
+            margin-right: 15px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nova Escala</h1>
+            <div class="nav">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="calendario.html">Calendário</a>
+                <a href="perfil.html">Meu Perfil</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Informações da Escala</h3>
+            <form>
+                <div class="form-group">
+                    <label for="ministry">Ministério</label>
+                    <select id="ministry" class="form-control">
+                        <option value="">Selecione o ministério</option>
+                        <option value="louvor">Louvor</option>
+                        <option value="ensino">Ensino</option>
+                        <option value="diaconia">Diaconia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Data</label>
+                    <input type="date" id="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="time">Horário</label>
+                    <input type="time" id="time" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="description">Descrição</label>
+                    <textarea id="description" class="form-control" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>Membros Disponíveis</h3>
+            <ul class="member-list">
+                <li class="member-item">
+                    <input type="checkbox" class="checkbox">
+                    <div class="member-info">
+                        <div class="member-name">João Silva</div>
+                        <div class="member-role">Vocalista</div>
+                    </div>
+                </li>
+                <li class="member-item">
+                    <input type="checkbox" class="checkbox">
+                    <div class="member-info">
+                        <div class="member-name">Maria Santos</div>
+                        <div class="member-role">Instrumentista</div>
+                    </div>
+                </li>
+                <li class="member-item">
+                    <input type="checkbox" class="checkbox">
+                    <div class="member-info">
+                        <div class="member-name">Pedro Oliveira</div>
+                        <div class="member-role">Vocalista</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="actions">
+            <button class="btn btn-primary">Salvar Escala</button>
+            <button class="btn btn-secondary">Cancelar</button>
+        </div>
+
+        <a href="dashboard.html" class="back-link">← Voltar para o Dashboard</a>
+    </div>
+</body>
+</html> 
