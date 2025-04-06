@@ -26,3 +26,9 @@ Redireciona para o dashboard após o login
 Mantém a sessão do usuário (usando localStorage ou sessionStorage)
 Tem um botão de logout
 Mostra o nome do usuário no dashboard
+
+![image](https://github.com/user-attachments/assets/3d52d55e-7342-4b75-83cd-3c01f0a4b6ef)
+
+
+
+
